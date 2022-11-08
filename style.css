@@ -1,0 +1,43 @@
+:root {
+  background-color: #333;
+  color: lightgray;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
+
+  --margin-left-right: 10%;
+}
+
+a:link {
+  color: #99f;
+}
+
+a:visited {
+  color: #F6F
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: lightblue;
+}
+
+h1 {
+  margin: 1em var(--margin-left-right);
+}
+
+main {
+  max-width: 80ch;
+  margin: 1em var(--margin-left-right);
+}
+
+footer {
+  margin: 2em var(--margin-left-right);
+}
+
+@media (max-width: 96ch) {
+  :root {
+    --margin-left-right: 0;
+  }
+}
