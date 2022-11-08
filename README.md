@@ -1,7 +1,8 @@
 # Codecademy HTML (& friends) Exercises
 This repository hosts my exercises projects assigned by Codecademy courses
 in HTML & related (CSS, JavaScript, etc) technologies. The results are
-hosted via GitHub Pages so I could view results from any web capable device.
+hosted via GitHub Pages so I could view results from any web capable device
+by visiting https://roger-random.github.io/codecademy_html/
 
 ## Licensing
 I do not know Codecademy's licensing policy on this material. While I'm happy
