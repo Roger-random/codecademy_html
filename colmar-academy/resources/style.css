@@ -7,7 +7,7 @@ header {
   display:flex;
   justify-content: space-between;
   height: 64px;
-  z-index: 1;
+  padding: 0 24px;
 }
 
 .academy-identifier {
@@ -27,11 +27,10 @@ header {
 
 .academy-logo {
   display: inline;
-  margin-left: 24px;
   height: 48px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .academy-name {
     display:none;
   }  
@@ -40,12 +39,11 @@ header {
 nav {
   display: flex;
   align-items: center;
-  margin-right: 24px;
 }
 
 nav a {
   display:inline;
-  margin: 10px;
+  margin: 12px;
   font-size: 24px;
   text-decoration: none;
 }
@@ -55,6 +53,11 @@ nav a {
 }
 
 @media (max-width: 700px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
   .nav-icon {
     display:inline;
   }
@@ -64,7 +67,13 @@ nav a {
     display:none;
   }
 
-  nav a {
-    margin: 28px;
+  nav {
+    display: flex;
+    justify-content: space-evenly;
   }
+}
+
+.welcome {
+  display: flex;
+  justify-content: flex-start;
 }
