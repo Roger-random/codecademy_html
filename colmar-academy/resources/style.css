@@ -48,6 +48,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 .nav-icon {
   display: none;
 }
@@ -74,6 +78,80 @@ nav a {
 }
 
 .welcome {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
+  background: #CCC;
+}
+
+.welcome-img {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1ch 6ch 1ch 2ch;
+}
+
+.welcome-text h1 {
+  font-size: 3em;
+  color: #444;
+  margin: 0;
+}
+
+.welcome-text p {
+  font-size: 2em;
+  color: #444;
+  margin: 1em 0;
+}
+
+button {
+  width: 80%;
+  padding: 8px;
+  background-color: #444;
+  font-size: 1.5em;
+  color: white;
+  border: 0px;
+}
+
+button:hover {
+  background-color: white;
+  color: #444;
+}
+
+button:active {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .welcome {
+    flex-direction: column;
+  }
+
+  .welcome-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .welcome-text {
+    padding: 0.5ch;
+    text-align: flex-start;
+  }
+
+  .welcome-text h1 {
+    margin: 32px 16px;
+  }
+
+  .welcome-text p {
+    margin: 24px 16px;
+  }
+
+  button {
+    width: 80%;
+    margin: 32px 10%;
+  }
 }
