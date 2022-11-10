@@ -1,7 +1,13 @@
+/***************************************************************************/
+/* Global */
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
 }
+
+/***************************************************************************/
+/* Header */
 
 header {
   display:flex;
@@ -21,7 +27,7 @@ header {
   color: #777;
 }
 
-.academy-identifier p b {
+.academy-identifier b {
   color: #444;
 }
 
@@ -35,6 +41,9 @@ header {
     display:none;
   }  
 }
+
+/***************************************************************************/
+/* Nav bar */
 
 nav {
   display: flex;
@@ -77,6 +86,9 @@ nav a:hover {
   }
 }
 
+/***************************************************************************/
+/* Welcome banner */
+
 .welcome {
   width: 100%;
   display: flex;
@@ -97,19 +109,19 @@ nav a:hover {
   padding: 1ch 6ch 1ch 2ch;
 }
 
-.welcome-text h1 {
+.welcome h1 {
   font-size: 3em;
   color: #444;
   margin: 0;
 }
 
-.welcome-text p {
+.welcome p {
   font-size: 2em;
   color: #444;
   margin: 1em 0;
 }
 
-button {
+.welcome button {
   width: 80%;
   padding: 8px;
   background-color: #444;
@@ -118,12 +130,12 @@ button {
   border: 0px;
 }
 
-button:hover {
+.welcome button:hover {
   background-color: white;
   color: #444;
 }
 
-button:active {
+.welcome button:active {
   font-weight: bold;
 }
 
@@ -142,16 +154,114 @@ button:active {
     text-align: flex-start;
   }
 
-  .welcome-text h1 {
+  .welcome h1 {
     margin: 32px 16px;
   }
 
-  .welcome-text p {
+  .welcome p {
     margin: 24px 16px;
   }
 
-  button {
+  .welcome button {
     width: 80%;
     margin: 32px 10%;
+  }
+}
+
+/***************************************************************************/
+/* Information */
+
+.information {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.information h1 {
+  font-size: 1.5em;
+  margin: 0.25em 0;
+}
+
+.information article {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.information article .image {
+  width: 100%;
+}
+
+.information article .text {
+  padding: 16px;
+}
+
+.information .copy {
+  margin: 8px 0;
+}
+
+.information .quote {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.information a {
+  text-decoration: none;
+  margin: 0;
+  color: #5AF;
+}
+
+.information .link {
+  margin: 0;
+}
+
+.information a:hover {
+  text-decoration: underline;
+}
+
+#practicing {
+  grid-row: 1 / 4;
+  padding: 32px 24px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#guest-lecture {
+  background-color: #DDD;
+}
+
+.information .mobile {
+  display:none;
+}
+
+@media (max-width: 900px) {
+  .information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .information article .image {
+    width: calc(100% - 32px);
+    margin: 16px;
+  }
+
+  .information .mobile {
+    display: block;
+  }
+
+  #practicing {
+    display: none;
+  }
+
+  .information .desktop {
+    display: none;
   }
 }
