@@ -175,6 +175,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr 1fr 1fr;
+  padding-bottom: 32px;
 }
 
 .information h1 {
@@ -262,6 +263,89 @@ nav a:hover {
   }
 
   .information .desktop {
+    display: none;
+  }
+}
+
+
+/***************************************************************************/
+/* Courses */
+
+.courses {
+  background: #EEE;
+  padding-bottom: 32px;
+}
+
+.courses h1 {
+  text-align: center;
+  padding-top: 32px;
+  font-size: 2em;
+  margin: 0;
+}
+
+.courses h2 {
+  margin: 16px;
+  color: black;
+  font-size: 1.5em;
+}
+
+.courses p {
+  margin: 8px 16px;
+  color: black;
+}
+
+.courses ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 32px 72px;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.courses li {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 16px;
+  padding: 0;
+  background: white;
+}
+
+.courses li img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .courses ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .courses {
+    background: white;
+  }
+
+  .courses ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courses li {
+    background: #EEE;
+  }
+
+  .courses h2 {
+    color: #444;
+  }
+
+  .courses li img {
+    display: none;
+  }
+
+  .courses li p {
     display: none;
   }
 }
