@@ -325,6 +325,8 @@ nav a:hover {
 @media (max-width: 700px) {
   .courses {
     background: white;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
   }
 
   .courses ul {
@@ -425,5 +427,27 @@ nav a:hover {
   .thesis ul {
     display: block;
     margin: 0;
+  }
+}
+
+/***************************************************************************/
+/* Footer */
+
+footer {
+  border-top: 1px solid #DDD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+footer p {
+  display: inline;
+  padding: 0 16px;
+}
+
+@media (max-width: 700px) {
+  footer .legal {
+    display: none;
   }
 }
